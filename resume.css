@@ -1,0 +1,498 @@
+/* Resumate */
+
+.main-infos {
+  margin-bottom: 3%;
+  margin-top: 3%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-left {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.info-right {
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+}
+
+.colored-blue {
+  margin-left: 10%;
+  font-size: 1.5rem;
+  color: #cdfafa;
+}
+
+/* real info */
+
+.box-experience-education {
+  display: flex;
+}
+
+.experience-left,
+.education-right {
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 650px;
+}
+
+.major,
+.h-style-2 {
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 1.5rem;
+  color: #010a13;
+  padding: 5px 0 2px 0;
+}
+
+.major {
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #bd8e2a;
+  align-self: flex-start;
+  border: 2px solid #f0e6d2;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.exp-style {
+  margin-bottom: 2%;
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 1.2rem;
+  color: #010a13c9;
+}
+
+.block-one,
+.block-two,
+.block-three {
+  margin: 5% 0 5% 0;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-name-2 {
+  margin-top: 10%;
+  border: 2px solid rgb(236, 231, 231);
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #cdfafa;
+}
+/* CODING & DESIGN */
+
+.colored-1 {
+  margin-left: 10%;
+  font-size: 1.5rem;
+  color: #cdfafa;
+}
+
+.colored-1.blue {
+  transform: translateY(35px);
+  position: absolute;
+  margin-left: 3%;
+  font-size: 1.5rem;
+  color: #cdfafa;
+}
+
+.coding-design {
+  transform: translateX(-80px);
+  display: flex;
+  margin: 5% 0 5% 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-l,
+.coding-r {
+  margin: 0 20% 0 15%;
+  display: flex;
+  align-items: center;
+}
+
+/* Progress Bar */
+
+.coding-design-content {
+  display: flex;
+}
+
+.design-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+}
+
+.parent-design {
+  margin: 3% 0 20% 0;
+}
+
+.parent-adobe {
+  margin: 10% 0 15% 0;
+}
+.parent-uix {
+  margin: 15% 0 3% 0;
+}
+
+.loader,
+.loader2,
+.loader3 {
+  margin: 35px 0px;
+  padding: 0px 35px;
+  height: 40px;
+  width: 220px;
+  background: #c89b3c;
+  border-radius: 30px;
+  position: relative;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.progress-bar,
+.progress-bar2,
+.progress-bar3 {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  box-shadow: #f0e6d2 0px 0px 5px 1px;
+  background-color: #091428;
+  border-radius: 30px;
+}
+
+.completion-bar,
+.completion-bar2,
+.completion-bar3 {
+  background: rgb(22, 44, 85);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 44, 85, 1) 0%,
+    rgba(12, 27, 57, 1) 100%
+  );
+
+  width: 1%;
+  height: 100%;
+  animation: test 3s linear forwards;
+}
+.completion-bar2 {
+  animation: test2 3s linear forwards;
+}
+.completion-bar3 {
+  animation: test3 4s linear forwards;
+}
+
+.loader::after,
+.loader2::after,
+.loader3::after {
+  color: #f0e6d2;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: Garamond, "Times New Roman", serif;
+  text-decoration: double;
+}
+.loader::after {
+  left: 100px;
+  content: "50 %";
+}
+.loader2::after {
+  left: 125px;
+  content: "75 %";
+}
+.loader3::after {
+  left: 135px;
+  content: "100 %";
+}
+
+.progress-bar::before,
+.progress-bar2::before,
+.progress-bar3::before {
+  position: absolute;
+  color: #bd8e2a;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: Garamond, "Times New Roman", serif;
+  text-decoration: double;
+  transform: translate(-75%, -225%);
+}
+
+.progress-bar::before {
+  content: "Web Design";
+}
+.progress-bar2::before {
+  content: "Adobe Suite";
+}
+.progress-bar3::before {
+  content: "UIX Design";
+}
+
+@keyframes test {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@keyframes test2 {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@keyframes test3 {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* Cricle Bar */
+.coding-content {
+  display: flex;
+  flex-direction: column;
+}
+.coding-content {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  width: 50%;
+  height: 100%;
+}
+
+svg {
+  border-radius: 50%;
+
+  background-color: #091428;
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 20px 45px #010a13;
+  border-radius: 20px;
+}
+
+.box {
+  background: linear-gradient(
+    180deg,
+    rgba(22, 44, 85, 1) 0%,
+    rgba(12, 27, 57, 1) 100%
+  );
+}
+
+.box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f0e6d2;
+}
+
+.box .percent svg circle.html:nth-child(2) {
+  stroke-dashoffset: calc(
+    440 - (440 * 85) / 100
+  ); /* PUT PERCENTAGE VALUE HERE */
+  stroke: #bd8e2a;
+}
+.box .percent svg circle.css:nth-child(2) {
+  stroke-dashoffset: calc(
+    440 - (440 * 70) / 100
+  ); /* PUT PERCENTAGE VALUE HERE */
+  stroke: #bd8e2a;
+}
+.box .percent svg circle.bdd:nth-child(2) {
+  stroke-dashoffset: calc(
+    440 - (440 * 60) / 100
+  ); /* PUT PERCENTAGE VALUE HERE */
+  stroke: #bd8e2a;
+}
+.box .percent svg circle.python:nth-child(2) {
+  stroke-dashoffset: calc(
+    440 - (440 * 30) / 100
+  ); /* PUT PERCENTAGE VALUE HERE */
+  stroke: #bd8e2a;
+}
+
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.box .percent .number h2 {
+  font-size: 24px;
+}
+
+.box .text {
+  padding: 10px 0 0;
+  color: #f0e6d2;
+  letter-spacing: 1px;
+}
+
+.box:hover .percent .number h2 {
+  color: #bd8e2a;
+  font-size: 36px;
+}
+
+.box-html:hover,
+.box-css:hover,
+.box-bdd:hover,
+.box-python:hover,
+.percent .number h2 {
+  color: #f0e6d2;
+  font-size: 36px;
+}
+
+.box-html:hover,
+.box-css:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-50px);
+  box-shadow: 0px 0px 5px 5px#F0E6D2;
+}
+
+.box-bdd:hover,
+.box-python:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: translateY(50px);
+  box-shadow: 0px 0px 5px 5px#F0E6D2;
+}
+
+.box:hover .text-html,
+.box:hover .text-css,
+.box:hover .text-bdd,
+.box:hover .text-python {
+  font-size: 24px;
+  transform: translateY(20px);
+  color: #bd8e2a;
+  text-decoration: #bd8e2a underline;
+}
+
+/* Language & Soft Skills */
+
+.soft-lang {
+  height: 300px;
+  display: flex;
+}
+
+.lang-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.language {
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  width: 300px;
+  margin: 15% 0 10% 0;
+}
+
+.name-name {
+  position: absolute;
+  color: #bd8e2a;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: Garamond, "Times New Roman", serif;
+  transform: translate(-50px, -35px);
+}
+
+.colored {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #091428;
+}
+
+.colored-x {
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #f0e6d2;
+}
+
+ul > .soft-box-lang {
+  bottom: 30px;
+}
+
+.soft-box-lang {
+  margin: 20px 0 50px 125px;
+  position: relative;
+}
+
+.soft-box-lang span.text {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: Garamond, "Times New Roman", serif;
+  color: #f0e6d2;
+  transform: translate(-5px, 50px);
+}
+
+.jsr {
+  position: absolute;
+  transform: translate(-35px, -3px);
+}
+.color-i.jsr {
+  color: #bd8e2a;
+}

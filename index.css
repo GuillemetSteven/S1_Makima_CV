@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.a-ref {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(20, 41, 83);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-background {
+  position: fixed;
+  width: 85vw;
+  display: flex;
+  margin: 5% 0 0 10%;
+  box-shadow: #cdfafa 0px 0px 10px 5px;
+}
+
+/* Left part */
+
+.box-left {
+  margin-right: 3%;
+  border: 2px solid #cdfafa;
+  border-radius: 5px;
+  height: 800px;
+  width: 600px;
+}
+
+.top {
+  height: 500px;
+  width: 100%;
+}
+
+.bottom {
+  margin-top: 5%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colored-gold {
+  color: #bd8e2a;
+}
+
+.bottom-top > ul {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-bot > ul {
+  margin: 35px 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sized {
+  font-size: 1.5rem;
+  color: #cdfafa;
+}
+
+.sized-2 {
+  font-size: 1.2rem;
+}
+
+.coloro {
+  margin-bottom: 20%;
+  color: #f0e6d2;
+}
+.coloro:hover {
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  font-size: 4em;
+  color: #bd8e2a;
+}
+
+/* Right part (box right part) */
+
+.disabled {
+  display: none;
+}
+
+.box-right-invisible {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  width: 800px;
+}
+
+.box-right {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  height: 700px;
+  width: 900px;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* About me */
+.title-name {
+  margin-top: 2%;
+  border: 2px solid rgb(236, 231, 231);
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #cdfafa;
+}
+
+.box-posi {
+  height: 200px;
+  width: 600px;
+}
+.box-content {
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color {
+  padding: 0 2% 0 2%;
+  border-radius: 5px;
+  color: #f0e6d2;
+  font-size: 1.5rem;
+  background-color: #bd8e2a;
+}
+
+.li-style-1 {
+  color: #bd8e2a;
+  font-size: 1.5rem;
+}
+
+.p-style-1 {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  font-family: Garamond, "Times New Roman", serif;
+  color: #f0e6d2;
+}
+
+.personnal-infos {
+  margin: 3% 0 3% 0;
+  height: 250px;
+  display: flex;
+}
+
+.personnal-infos-left {
+  width: 50%;
+  text-align: center;
+}
+
+/* My services */
+
+.box-services {
+  margin: 3% 0 3% 0;
+  height: 500px;
+}
+
+.services-top,
+.services-bottom {
+  margin-right: 5%;
+}
+
+.services-top {
+  display: flex;
+  align-items: center;
+  height: 25%;
+}
+
+.services-bottom {
+  display: flex;
+  align-items: center;
+  height: 75%;
+}
+
+.services-left-top,
+.services-right-top,
+.services-left-bot,
+.services-right-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 25%;
+  width: 50%;
+}
+
+.h-style-1 {
+  margin-bottom: 3%;
+  font-size: 1.3rem;
+  color: #bd8e2a;
+}
+
+.wire {
+  color: #cdfafa;
+  font-size: 1.2rem;
+}
+
+/* Gallery */
+
+.grid-background {
+  background-color: #b40e0e;
+  margin: 3% 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 3px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-right: 10px;
+  grid-auto-flow: dense;
+}
+
+.grid-item {
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.grid-img:hover {
+  transform: scale(1.3);
+}
+
+#makima-1 {
+  grid-column: span 5;
+}
+#makima-2 {
+  grid-row: span 2;
+}
+#makima-3 {
+  grid-column: span 4;
+}
+#makima-4 {
+  grid-row: span 2;
+}
+#makima-5 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+#makima-7 {
+  grid-column: span 2;
+}
+
+#grid::-webkit-scrollbar-track {
+  background: linear-gradient(
+    180deg,
+    rgba(22, 44, 85, 1) 0%,
+    rgba(12, 27, 57, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+#grid::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #1b282e;
+  cursor: pointer;
+}
+
+#grid::-webkit-scrollbar-thumb:hover {
+  background-color: #010a13;
+}
+
+/*   pseudo darkmode     */
+
+@media (prefers-color-scheme: dark) {
+  /* enlever le ": dark" pour voir les changements effectués */
+  body {
+    background-color: #111;
+  }
+  .colored-gold {
+    color: #b40e0e;
+  }
+
+  .box-bar,
+  .color {
+    background-color: #b40e0e;
+  }
+
+  .li-style-1,
+  .h-style-1 {
+    color: #b40e0e;
+  }
+
+  li a i::after {
+    background-color: #f0e6d2;
+  }
+
+  span.toto {
+    color: #d2f0dc;
+  }
+
+  .active:hover {
+    transform: translateX(-10px);
+    transition: 0.4s ease;
+    text-decoration: underline #f0e6d2;
+    text-decoration-thickness: 3px;
+  }
+
+  li a i {
+    color: #f0e6d2;
+  }
+
+  .major,
+  .h-style-2,
+  .exp-style,
+  .name-name,
+  .color-i.jsr {
+    color: #b40e0e !important; /* I know "!important" is a bad habit, but I didn't have the time to fix it properly */
+  }
+}
+
+/* Un début de responsive ! */
+
+@media screen and (max-width: 992px) {
+  .box-posi,
+  .services-right-top,
+  .services-right-bot,
+  section.education-right,
+  div.info-right,
+  div.coding-content,
+  div.coding-r,
+  div.container,
+  div.placement,
+  .box-skills {
+    display: none;
+  }
+
+  #grid {
+    display: block;
+  }
+
+  .grid-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-right {
+    display: none;
+  }
+}

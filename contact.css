@@ -1,0 +1,146 @@
+.box-right.disa {
+  overflow: hidden;
+}
+
+/* la classe riri qui est dans label donne la couleur de la police d'écriture ! */
+.riri {
+  font-weight: bold;
+  color: #010a13;
+  font-size: 2rem;
+  font-family: Garamond, "Times New Roman", serif;
+  text-decoration: double;
+}
+
+.input-box {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.placement {
+  margin-top: 20px;
+}
+
+input {
+  margin: 20px 25px 0px 0px;
+  font-size: 150%;
+  outline: none;
+}
+
+.loloi {
+  height: 200px;
+  cursor: pointer;
+  resize: none;
+  outline: none;
+}
+
+.validation {
+  display: flex;
+  justify-content: center;
+}
+
+.tata {
+  background-color: #010a13;
+  margin: 0 5% 0 5%;
+  color: #bd8e2a;
+  border-radius: 10px;
+  border: 2px solid #bd8e2a;
+}
+.tata:hover {
+  cursor: pointer;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  transition: all 0.3s ease;
+  color: #bd8e2a;
+}
+
+.input-x:focus {
+  transform: translate(-10px, -10px);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 4px solid #bd8e2a;
+}
+
+fieldset {
+  width: 95%;
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+form:focus-within {
+  border-radius: 10px;
+}
+
+.formform {
+  height: 65%;
+}
+
+footer {
+  width: 95%;
+  height: 30%;
+  background-color: #bd8e2a;
+  border: 3px solid #010a13;
+}
+
+.legal {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.legal ul li > a {
+  font-size: 1.5rem;
+  font-family: Garamond, "Times New Roman", serif;
+  color: #010a13;
+  margin: 5% 0 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  .box-right.disa {
+    overflow: visible;
+  }
+
+  .input-box {
+    padding: 10px;
+  }
+
+  input {
+    margin: 10px 15px 0px 0px;
+    font-size: 100%;
+  }
+
+  .loloi {
+    height: 100px;
+  }
+
+  .legal ul li > a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .loloi {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-height: 601px) and (max-height: 1024px) {
+  .loloi {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-height: 1025px) {
+  .loloi {
+    height: 150px;
+  }
+}

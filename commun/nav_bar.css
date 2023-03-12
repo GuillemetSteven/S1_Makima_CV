@@ -1,0 +1,87 @@
+/*-----NAV BAR-----NAV BAR-----NAV BAR-----*/
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.box-bar {
+  padding-top: 26px;
+  position: relative;
+  border-radius: 50px;
+  height: 270px;
+  width: 60px;
+  background-color: #091428;
+}
+
+.nav-items {
+  width: 100%;
+}
+
+li a {
+  text-transform: uppercase;
+}
+li a i {
+  display: block;
+  position: relative;
+  color: #bd8e2a;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+li:hover a i {
+  transition: 0.4s ease;
+  color: #f0e6d2;
+}
+
+li a span {
+  position: absolute;
+  margin: 20px 0 20px -145px;
+}
+
+li a span.span-home {
+  margin-left: -120px;
+}
+
+li a span.span-license {
+  margin-left: -135px;
+}
+
+li a span.span-resume {
+  margin-left: -135px;
+}
+
+span.toto {
+  color: #bd8e2a;
+}
+
+.active:hover {
+  transform: translateX(-10px);
+  transition: 0.4s ease;
+  text-decoration: underline #bd8e2a;
+  text-decoration-thickness: 3px;
+}
+
+li a i::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 60px;
+  width: 0px;
+  height: 50%;
+  transform: translateY(-50%);
+  background-color: #bd8e2a;
+  border-radius: 8px 0 0 8px;
+}
+
+li:hover a i::after {
+  width: 6px;
+  transition: 0.3s;
+}
+
+ul .active.activo {
+  text-decoration: underline #bd8e2a;
+  text-decoration-thickness: 3px;
+}
+/*-----NAV BAR-----NAV BAR-----NAV BAR-----*/
